@@ -1,3 +1,11 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  padding: 20px;
+  background-color: #999;
+}
 #kalkulators{
   font-family: 'Roboto', sans-serif;
   background-color: #83c7fc;
@@ -13,6 +21,15 @@
   padding: 25px;
 }
 
+#displejs{
+  width: 100%;
+  padding: 20px;
+  font-size: 4rem;
+  text-align: center;
+  background-color: #90cefe;
+  border: none;
+}
+
 button{
   width: 100px;
   height: 100px;
@@ -24,4 +41,31 @@ button{
   font-weight: bold;
   cursor: pointer;
   
+}
+
+button:hover{
+  background-color: #2e7af5;
+}
+button:active{
+  background-color: #89c1ec;
+}
+.funkcpoga{
+  background-color: #2e7af5;
+}
+.funkcpoga:hover{
+  background-color: #47a7f0;
+}
+.funkcpoga:active{
+  background-color: #82c4f7;
+}
+
+.funkcpoga2{
+  background-color: #2e7af5;
+  color: gold;
+}
+.funkcpoga2:hover{
+  background-color: #47a7f0;
+}
+.funkcpoga2:active{
+  background-color: #82c4f7;
 }
