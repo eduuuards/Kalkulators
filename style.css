@@ -13,6 +13,8 @@ body{
   border-radius: 15px;
   max-width: 500px;
   overflow:hidden;
+  border-color: none;
+  border-width: 7px;
 }
 #pogas{
   display:grid;
@@ -36,6 +38,7 @@ button{
   height: 100px;
   border-radius: 30px;
   border-color: none;
+  border-width: 7px;
   background-color: #47a7f0;
   color: white;
   font-size: 3rem;
@@ -75,9 +78,9 @@ button:active{
 .container{
   display: none;
   width: 200px;
-  height: 200px;
-  background: #47a7f0;
-  padding: 28px 32px;
+  height: 50px;
+  background: #83c7fc;
+  padding: 22px 28px;
   overflow: hidden;
   border-radius: 18px;
   font-family: 'Arial', sans-serif;
@@ -85,7 +88,7 @@ button:active{
 }
 
 .search-box{
-    width: 100%;
+    width: 120%;
   height: min-content;
   display: flex;
   align-items: center;
@@ -109,17 +112,40 @@ button:active{
 
 .search-box button{
   cursor: pointer;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   color: white;
   background: #2e7af5;
   border-radius: 50%;
   font-size: 22px;
   transition: 0.4 ease;
   padding: 5px;
+  border-color: none;
+  border-width: 2px;
 }
 
 weather-box{
   text-align: center;
+}
+
+weather-details{
+  font-size: 3rem;
+}
+
+temperature{
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.vesture{
+  display: none;
+  width: 200px;
+  height: 90px;
+  background: #83c7fc;
+  padding: 22px 28px;
+  overflow: hidden;
+  border-radius: 18px;
+  font-family: 'Arial', sans-serif;
+  transition: 0.6s ease-out;
 }
 

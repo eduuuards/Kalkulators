@@ -25,6 +25,14 @@ function paraditInfo() {
         container.style.display = "none";
     }
 }
+function paraditVest() {
+    var vesture = document.getElementById("vesture2");
+    if (vesture.style.display === "none") {
+        vesture.style.display = "block";
+    } else {
+        vesture.style.display = "none";
+    }
+}
 
 
 const container = document.querySelector('.container');
@@ -46,32 +54,33 @@ search.addEventListener('click', () => {
         .then(json => {
 
             if (json.cod === '404') {
-                container.style.height = '400px';
+                container.style.height = '60px';
                 weatherBox.style.display = 'none';
                 weatherDetails.style.display = 'none';
                 error404.style.display = 'block';
                 error404.classList.add('fadeIn');
+                error404.innerHTML = `Nav atrasta pilsēta`;
+                error404.style.textAlign = 'center';
                 return;
             }
-
             error404.style.display = 'none';
             error404.classList.remove('fadeIn');
 
             const temperature = document.querySelector('.weather-box .temperature');
             const description = document.querySelector('.weather-box .description');
             const mitrums = document.querySelector('.weather-details .mitrums span');
-            const vejs = document.querySelector('.weather-details .vejs span');
+            // const vejs = document.querySelector('.weather-details .vejs span');
 
-            temperature.innerHTML = `${parseInt(json.main.temp)}<span>°C</span>`;
-            description.innerHTML = `${json.weather[0].description}`;
-            mitrums.innerHTML = `${json.main.humidity}%`;
-            vejs.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
+            temperature.innerHTML = `TEMPERATŪRA: ${parseInt(json.main.temp)}<span>°C</span>`;
+            description.innerHTML = `${json.weather[0].description.toUpperCase()}`;
+            mitrums.innerHTML = `${json.main.humidity}% GAISA MITRUMS`;
+            // vejs.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
 
             weatherBox.style.display = '';
             weatherDetails.style.display = '';
             weatherBox.classList.add('fadeIn');
             weatherDetails.classList.add('fadeIn');
-            container.style.height = '590px';
+            container.style.height = '180px';
 
 
         });
