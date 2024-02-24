@@ -1,4 +1,5 @@
 const displejs = document.getElementById("displejs");
+let rekins = '';
 function rakstitDisp(input){
   displejs.value += input;
 }
@@ -10,7 +11,10 @@ function notiritDisp(){
 function aprekinat(){
   
   try{
+    rekins = displejs.value+'='+eval(displejs.value);
      displejs.value = eval(displejs.value);
+     document.getElementById("vesture2").innerHTML = rekins;
+   
     
   }
   catch(error){
@@ -19,7 +23,8 @@ function aprekinat(){
 }
 function paraditInfo() {
     var container = document.getElementById("container2");
-    if (container.style.display === "none") {
+    console.log(container.style.display);
+    if (container.style.display === "none" || container.style.display === "") {
         container.style.display = "block";
     } else {
         container.style.display = "none";
@@ -27,7 +32,7 @@ function paraditInfo() {
 }
 function paraditVest() {
     var vesture = document.getElementById("vesture2");
-    if (vesture.style.display === "none") {
+    if (vesture.style.display === "none" || vesture.style.display === "") {
         vesture.style.display = "block";
     } else {
         vesture.style.display = "none";
