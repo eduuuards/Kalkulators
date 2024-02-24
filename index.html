@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width">
   <title>Kalkulators</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-</script>
+
 </head>
+  <body>
   <div id="kalkulators"> 
       <input id="displejs" readonly>
       <div id="pogas">
@@ -29,11 +30,47 @@
         <button onclick="rakstitDisp('/')" class="funkcpoga">/</button>
         <button onclick="aprekinat()" class="funkcpoga">=</button>
         <button onclick="notiritDisp()" class="funkcpoga">C</button>
-        <button onclick="paraditInfo()" class="funkcpoga2">?</button>
-        <button onclick="paraditVest()" class="funkcpoga2">H</button>
+        <button onclick="paraditInfo()" class="funkcpoga2"><i class='fas fa-cloud-sun'></i></button>
+        <button onclick="paraditVest()" class="funkcpoga2"><i class='far fa-file-alt'></i></button>
   </div>
-<body>
-  <script src="script.js"></script>
-</body>
 
-</html>
+    <div class="container">
+      <div class="search-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Enter your city">
+        <button class="fa-solid fa-magnifying-glass"></button>
+      </div>
+
+      <div class="not-found">
+       <p>Nav atrasta valsts</p>
+      </div>
+
+      <div class="weather-box">
+        <p class="temperature"></p>  
+        <p class="description"></p>
+      </div>
+
+      <div class="weather-details">
+        <div class="mitrums">
+          <i class="fa solid fa-water"</i>
+          <div class="text">
+            <span></span>
+            <p>Mitrums</p>
+          </div>
+        </div>
+      </div>
+
+        <div class="vejs">
+          <i class="fa solid fa-wind"</i>
+          <div class="text">
+            <span></span>
+            <p>Vējš</p>
+          </div>
+        </div>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/acd07b7746.js" crossorigin="anonymous"></script>
+   
+</body>
+ </html>
+      
