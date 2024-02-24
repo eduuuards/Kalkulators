@@ -18,7 +18,7 @@ function aprekinat(){
   }
 }
 function paraditInfo() {
-    var container = document.getElementById(".container");
+    var container = document.getElementById("container2");
     if (container.style.display === "none") {
         container.style.display = "block";
     } else {
