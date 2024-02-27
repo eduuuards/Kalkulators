@@ -1,5 +1,6 @@
 const displejs = document.getElementById("displejs");
 let rekins = '';
+let rekins2 = '';
 function rakstitDisp(input){
   displejs.value += input;
 }
@@ -7,13 +8,18 @@ function rakstitDisp(input){
 function notiritDisp(){
   displejs.value = "";
 }
+function notiritVest(){
+  rekins2 = "";
+   document.getElementById("vesture2").innerHTML = rekins2;
+}
 
 function aprekinat(){
   
   try{
-    rekins = displejs.value+'='+eval(displejs.value);
+    rekins = '| '+displejs.value+'='+eval(displejs.value)+'\n';
      displejs.value = eval(displejs.value);
-     document.getElementById("vesture2").innerHTML = rekins;
+    rekins2 += rekins;
+     document.getElementById("vesture2").innerHTML = rekins2;
    
     
   }
@@ -59,7 +65,7 @@ search.addEventListener('click', () => {
         .then(json => {
 
             if (json.cod === '404') {
-                container.style.height = '60px';
+                container.style.height = '70px';
                 weatherBox.style.display = 'none';
                 weatherDetails.style.display = 'none';
                 error404.style.display = 'block';
@@ -85,7 +91,7 @@ search.addEventListener('click', () => {
             weatherDetails.style.display = '';
             weatherBox.classList.add('fadeIn');
             weatherDetails.classList.add('fadeIn');
-            container.style.height = '180px';
+            container.style.height = '220px';
 
 
         });
