@@ -14,19 +14,17 @@ function notiritVest(){
 }
 
 function aprekinat(){
-  
   try{
     rekins = '| '+displejs.value+'='+eval(displejs.value)+'\n';
      displejs.value = eval(displejs.value);
     rekins2 += rekins;
      document.getElementById("vesture2").innerHTML = rekins2;
-   
-    
   }
   catch(error){
     displejs.value = "Kļūda";
   }
 }
+
 function paraditInfo() {
     var container = document.getElementById("container2");
     console.log(container.style.display);
@@ -44,7 +42,6 @@ function paraditVest() {
         vesture.style.display = "none";
     }
 }
-
 
 const container = document.querySelector('.container');
 const search = document.querySelector('.search-box button');
@@ -80,21 +77,15 @@ search.addEventListener('click', () => {
             const temperature = document.querySelector('.weather-box .temperature');
             const description = document.querySelector('.weather-box .description');
             const mitrums = document.querySelector('.weather-details .mitrums span');
-            // const vejs = document.querySelector('.weather-details .vejs span');
 
             temperature.innerHTML = `TEMPERATŪRA: ${parseInt(json.main.temp)}<span>°C</span>`;
             description.innerHTML = `${json.weather[0].description.toUpperCase()}`;
             mitrums.innerHTML = `${json.main.humidity}% GAISA MITRUMS`;
-            // vejs.innerHTML = `${parseInt(json.wind.speed)}Km/h`;
 
             weatherBox.style.display = '';
             weatherDetails.style.display = '';
             weatherBox.classList.add('fadeIn');
             weatherDetails.classList.add('fadeIn');
             container.style.height = '220px';
-
-
         });
-
-
 });
