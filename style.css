@@ -48,19 +48,19 @@ button{
 }
 
 button:hover{
-  background-color: #2e7af5;
+  background-color: #94d1ff;
 }
 button:active{
-  background-color: #89c1ec;
+  background-color: #cde9fe;
 }
 .funkcpoga{
   background-color: #2e7af5;
 }
 .funkcpoga:hover{
-  background-color: #47a7f0;
+  background-color: #94d1ff;
 }
 .funkcpoga:active{
-  background-color: #82c4f7;
+  background-color: #bee2fe;
 }
 
 .funkcpoga2{
@@ -68,10 +68,10 @@ button:active{
   color: white;
 }
 .funkcpoga2:hover{
-  background-color: #47a7f0;
+  background-color: #94d1ff;
 }
 .funkcpoga2:active{
-  background-color: #82c4f7;
+  background-color: #d1ebff;
 }
 
 
@@ -151,7 +151,7 @@ temperature{
   margin-top: 10px;
   display: none;
   width: 200px;
-  height: 150px;
+  height: 350px;
   background: #83c7fc;
   padding: 8px 14px;
   overflow: hidden;
